@@ -15,6 +15,8 @@ function draw() {
   textSize(20);
   text(width, 100, 50);
 
+  console.log("mouseX= " + mouseX);
+
   // the x value is half the width, the y value is half the height
   circle(width / 2, height / 2, 50, 50);
 
@@ -26,7 +28,7 @@ function draw() {
 
   // ----- Other Built-in Functions (random, second, millis) -----
   text("Random Number: " + random(0, 50), 100, 150);
-  text("Current Second: " + second(), 100, 200);
+  text("Current Minute: " + minute(), 100, 200);
   text("Time since Start: " + millis(), 100, 250);
 }
 
@@ -41,3 +43,4 @@ function mouseClicked() {
   // random grey-white fill when the mouse is clicked
   fill(random(100, 255));
 }
+
